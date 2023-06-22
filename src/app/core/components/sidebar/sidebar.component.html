@@ -1,9 +1,8 @@
-
 <mat-toolbar class="toudoulou">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" *ngIf="sidenav.mode === 'side'"
-    (click)="sidenav.toggle()" >
-    <mat-icon > menu </mat-icon>
-    </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
     <span class="text">My App</span>
     <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
@@ -41,6 +40,13 @@
    
   
     <!-- Your main content goes here -->
+    <mat-toolbar class="sort-bar">
+      <mat-button-toggle-group [(ngModel)]="selectedSortOption">
+        <mat-button-toggle value="option1">Option 1</mat-button-toggle>
+        <mat-button-toggle value="option2">Option 2</mat-button-toggle>
+        <mat-button-toggle value="option3">Option 3</mat-button-toggle>
+      </mat-button-toggle-group>
+    </mat-toolbar>
 
 
     <div>

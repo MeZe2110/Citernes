@@ -2,6 +2,20 @@
     flex: 1 1 auto;
   }
 
+
+  .example-card {
+    max-width: 400px;
+    margin: 16px;
+    margin-left: 32px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+
+
 .toudoulou{
     
         background-color: #22346c;
@@ -25,6 +39,7 @@ mat-sidenav {
     color: white;
     padding: 16px;
     text-align: center;
+    
   }
   
   .content {
@@ -34,6 +49,7 @@ mat-sidenav {
     align-items: center;
     font-size: 2rem;
     color: lightgray;
+  
   }
   
   mat-sidenav-container {
@@ -71,3 +87,4 @@ mat-sidenav {
   .mat-mdc-button:not(:disabled) {
       color: #b9b9b9;
   }
+

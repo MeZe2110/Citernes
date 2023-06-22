@@ -11,6 +11,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; 
 import { MatSelectModule } from '@angular/material/select'; 
 import { MatSidenavModule } from '@angular/material/sidenav'; 
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 
 
@@ -27,7 +28,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatRadioModule,
     MatProgressSpinnerModule,
     MatSelectModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatButtonToggleModule
   ]
 })
 
