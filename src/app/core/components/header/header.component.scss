@@ -16,7 +16,7 @@
 }
 
 mat-sidenav {
-    margin: 16px;
+    
     width: 200px;
     border-right: none;
     background: white;
@@ -27,13 +27,9 @@ mat-sidenav {
   
   .content {
     height: calc(100vh - 98px);
-    margin: 16px;
-    margin-left: 32px;
-  
     display: flex;
     justify-content: center;
     align-items: center;
-  
     font-size: 2rem;
     color: lightgray;
   }
@@ -51,20 +47,10 @@ mat-sidenav {
   
     mat-icon {
       margin-right: 8px;
+      color: #b9b9b9;
     }
   }
   
-  .avatar {
-    margin-top: 16px;
-    width: 100px;
-    height: 100px;
-    
-  }
-  
-  .name {
-    margin-top: 8px;
-    font-weight: normal;
-  }
   
   .designation {
     margin-top: 2px;
