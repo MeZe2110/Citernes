@@ -1,5 +1,5 @@
 
-<mat-toolbar class="toudoulou">
+<mat-toolbar class="toudoulou" >
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" *ngIf="sidenav.mode === 'side'"
     (click)="sidenav.toggle()" >
     <mat-icon > menu </mat-icon>
@@ -20,20 +20,20 @@
       <img  src="./assets/images/logoBWS.png" >
 <mat-divider></mat-divider>
       <button mat-button class="menu-button">
-        <mat-icon svgIcon="tdb"></mat-icon>
+        <mat-icon svgIcon="tdb" class="try"></mat-icon>
         <span>Tableau de bord</span>
       </button>
       <button mat-button class="menu-button">
-        <mat-icon svgIcon="historique"></mat-icon>
+        <mat-icon svgIcon="historique" class="try"></mat-icon>
         <span>Historique</span>
       </button>
       <button mat-button class="menu-button">
-        <mat-icon svgIcon="maps"></mat-icon>
+        <mat-icon svgIcon="maps" class="try"></mat-icon>
         <span>Map</span>
       </button>
       <mat-divider></mat-divider>
       <button mat-button class="menu-button">
-        <mat-icon svgIcon="alert"></mat-icon>
+        <mat-icon svgIcon="alert" class="try"></mat-icon>
         <span>Alerts</span>
       </button>
     </mat-sidenav>
@@ -42,27 +42,6 @@
   
     <!-- Your main content goes here -->
 
-
-    <div>
-      <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
-    
-  </div>
+  <!---citerne-->
+ <app-widget></app-widget>
   </mat-sidenav-container>

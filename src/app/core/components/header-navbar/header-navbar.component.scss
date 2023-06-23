@@ -15,6 +15,17 @@
   }
 
 
+  .test{
+    max-width: 95%;
+    margin: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: white;
+    border-radius: 10px;
+    color: #6e6e6e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
 
 .toudoulou{
     
@@ -64,7 +75,7 @@ mat-sidenav {
     font-size: 0.9rem;
     
   
-    mat-icon {
+    .try{
       margin-right: 8px;
       color: #b9b9b9;
     }
