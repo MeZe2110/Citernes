@@ -1,62 +1,115 @@
+<!---Citenre-->
 <div>
-  <mat-toolbar class="test">
-    <span>TEST</span>
-    <span class="example-spacer"></span>
-    <button mat-mini-fab matTooltip="Accent" color="accent" aria-label="Example mini fab with a heart icon">
-      <mat-icon svgIcon="maps"></mat-icon>
+  <mat-toolbar class="barre">
+    <span>États des citernes</span>
+    <span class="spacer"></span>
+    <button class="custom-button">
+      <mat-icon class="custom-icon" svgIcon="tc"></mat-icon>
+      <span >Toutes les citernes</span>
     </button>
-    </mat-toolbar>
-    <div>
-  <mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
-</div>
+    <button class="custom-button">
+      <mat-icon class="custom-icon" svgIcon="capacite"></mat-icon>
+      <span >Capactité</span>
+    </button>
+    <button class="custom-button">
+      <mat-icon class="custom-icon" svgIcon="nature"></mat-icon>
+      <span >Nature</span>
+    </button>
+    <button class="custom-button">
+      <mat-icon class="custom-icon" svgIcon="date"></mat-icon>
+      <span >Date</span>
+    </button>
+    <button class="custom-button">
+      <mat-icon class="custom-icon" svgIcon="pmap"></mat-icon>
+      <span >Site</span>
+    </button>
+    <span class="example-spacer"></span>
+    <button mat-mini-fab>
+      <img src="./assets/images/icon-10.png" >
+    </button>
+  </mat-toolbar>
+      <div class="card-container">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Citerne 1</mat-card-title>
+          <span class="example-spacer"></span>
+          <p>il y a <span class="temps">3min</span></p>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="citerne-content">
+            <div class="image-container">
+              <img src="./assets/images/citerne10m.png">
+            </div>
+            <div class="text-container">
+              <p>Gasoile</p>
+              <p> Dernier ravitaillement</p>
+              <p>15:55-26/06/2023</p>
+              <p>7,5m³</p>
+            </div>
+        </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Citerne 2</mat-card-title>
+          <span class="example-spacer"></span>
+          <p>il y a <span class="temps">3min</span></p>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="citerne-content">
+            <div class="image-container">
+              <img src="./assets/images/citerne-rouge.png">
+            </div>
+            <div class="text-container">
+              <p>Gasoile</p>
+              <p> Dernier ravitaillement</p>
+              <p>15:55-26/06/2023</p>
+              <p>7,5m³</p>
+            </div>
+        </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Citerne 3</mat-card-title>
+          <span class="example-spacer"></span>
+          <p>il y a <span class="temps">3min</span></p>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="citerne-content">
+            <div class="image-container">
+              <img src="./assets/images/citerne-orange.png">
+            </div>
+            <div class="text-container">
+              <p>Gasoile</p>
+              <p> Dernier ravitaillement</p>
+              <p>15:55-26/06/2023</p>
+              <p>7,5m³</p>
+            </div>
+        </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Citerne 4</mat-card-title>
+          <span class="example-spacer"></span>
+          <p>il y a <span class="temps">3min</span></p>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="citerne-content">
+            <div class="image-container">
+              <img src="./assets/images/citerne10m.png">
+            </div>
+            <div class="text-container">
+              <p>Gasoile</p>
+              <p> Dernier ravitaillement</p>
+              <p>15:55-26/06/2023</p>
+              <p>7,5m³</p>
+            </div>
+        </div>
+        </mat-card-content>
+      </mat-card>
+      </div>
+      
 </div>
 
-<!---POMPE-->
-<div>
-<mat-toolbar class="test">
-<span>TEST</span>
-<span class="example-spacer"></span>
-
-
-
-</mat-toolbar>
-  <div>
-    <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
-</div>
-</div>

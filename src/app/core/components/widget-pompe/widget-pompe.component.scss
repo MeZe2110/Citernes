@@ -1,5 +1,5 @@
 
-  .barre{
+.barre{
     max-width: 95%;
     margin: 16px;
     margin-left: 32px;
@@ -49,10 +49,15 @@
     max-width: 50%;
     margin-left: 2%;
     margin: 3%;
+
+  }
+
+  .card-container {
+    display: flex;
   }
 
 
-
+  
   .custom-button {
     display: inline-flex;
     align-items: center;
@@ -75,6 +80,7 @@
   .custom-icon {
     margin-right: 15px;
   }
+  
 
   .spacer{
     margin-right: 5%;

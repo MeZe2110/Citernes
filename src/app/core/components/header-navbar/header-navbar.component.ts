@@ -23,8 +23,14 @@ export class HeaderNavbarComponent {
     this.matIconRegistry.addSvgIcon("alert", this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/alerts.svg") );
     this.matIconRegistry.addSvgIcon("historique",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/history.svg"));
     this.matIconRegistry.addSvgIcon( "maps",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/map.svg"));
-    this.matIconRegistry.addSvgIcon( "pompe",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/pompe.svg"));
-    this.matIconRegistry.addSvgIcon( "citerne",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/citerne.svg"));
+    this.matIconRegistry.addSvgIcon( "tp",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-15.svg"));
+    this.matIconRegistry.addSvgIcon( "tc",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-16.svg"));
+    this.matIconRegistry.addSvgIcon( "capacite",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-17.svg"));
+    this.matIconRegistry.addSvgIcon( "nature",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-18.svg"));
+    this.matIconRegistry.addSvgIcon( "date",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-19.svg"));
+    this.matIconRegistry.addSvgIcon( "pmap",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-20.svg"));
+    this.matIconRegistry.addSvgIcon( "fleche",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-21.svg"));
+    this.matIconRegistry.addSvgIcon( "menus",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-26.svg"));
 
 }
 

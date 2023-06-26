@@ -1,101 +1,38 @@
-.example-spacer {
-    flex: 1 1 auto;
-  }
-
-
-  .example-card {
-    max-width: 400px;
-    margin: 16px;
-    margin-left: 32px;
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
-
-
-  .test{
-    max-width: 95%;
-    margin: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
-    background-color: white;
-    border-radius: 10px;
-    color: #6e6e6e;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-
-.toudoulou{
-    
-        background-color: #22346c;
-    
-}
-.mat-icon{
-    color: white;
+.toudoulou {
+  background-color: #22346c;
 }
 
-.text{
-    color: white;
+.text {
+  color: white;
 }
-
-
 
 mat-sidenav {
-    
-    width: 200px;
-    border-right: none;
-    background: white;
-    color: white;
-    padding: 16px;
-    text-align: center;
-    
-  }
-  
-  .content {
-    height: calc(100vh - 98px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: lightgray;
-  
-  }
-  
-  mat-sidenav-container {
-    height: calc(100vh - 65px);
-  }
+  width: 15%;
+  border-right: none;
+  background: white;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
 
-  .menu-button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 0.9rem;
-    
-  
-    .try{
-      margin-right: 8px;
-      color: #b9b9b9;
-    }
-  }
-  
-  
-  .designation {
-    margin-top: 2px;
-    font-size: 0.7rem;
-    color: lightgrey;
-  }
-  
-  mat-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
+mat-sidenav-container {
+  height: calc(100vh - 6.5%);
+}
 
-  .mat-mdc-button:not(:disabled) {
-      color: #b9b9b9;
-  }
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 90%;
+}
 
+mat-divider {
+  margin-top: 16%;
+  margin-bottom: 16%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mat-mdc-button:not(:disabled) {
+  color: #b9b9b9;
+}
