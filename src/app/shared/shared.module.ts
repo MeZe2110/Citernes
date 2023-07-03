@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 
 
@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     MaterialModule,
     HttpClientModule,
-    RouterModule
+    GoogleMapsModule
   ],
   exports: [
     MaterialModule

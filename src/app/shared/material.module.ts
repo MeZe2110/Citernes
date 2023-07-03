@@ -13,6 +13,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav'; 
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { GoogleMapsModule } from '@angular/google-maps'
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatSelectModule,
     MatSidenavModule,
     MatButtonToggleModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    GoogleMapsModule
   ]
 })
 
