@@ -7,6 +7,8 @@ import { HeaderNavbarComponent } from './components/header-navbar/header-navbar.
 import { WidgetPompeComponent } from './components/widget-pompe/widget-pompe.component';
 import { HistoriqueComponent } from './components/historique/historique.component';
 import { RouterModule } from '@angular/router';
+import { MapsComponent } from './components/maps/maps.component';
+import { AlerteComponent } from './components/alerte/alerte.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { RouterModule } from '@angular/router';
     HeaderNavbarComponent,
     WidgetComponent,
     WidgetPompeComponent,
-    HistoriqueComponent
+    HistoriqueComponent,
+    MapsComponent,
+    AlerteComponent
   ],
   imports: [
     CommonModule,
