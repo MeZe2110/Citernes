@@ -10,17 +10,16 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-
-  
   .content {
-    height: calc(100vh - 98px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: lightgray;
-  
+    padding: 16px;
+    margin-left: 1%;
+    margin-right: 2%;
   }
+  
+  .content > mat-card {
+    width: 200px;
+  }
+  
 
   .citerne-content{
   margin-top:10%;
@@ -42,13 +41,6 @@
 
   .example-spacer {
     flex: 1 1 auto;
-  }
-
-
-  .example-card {
-    max-width: 50%;
-    margin-left: 2%;
-    margin: 3%;
   }
 
 
@@ -79,3 +71,45 @@
   .spacer{
     margin-right: 5%;
   }
+
+  .button-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main_button {
+    z-index: 1;
+    /* Add any additional styling for the main button */
+  }
+  
+  .extra-buttons {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    /* Add any additional styling for the extra buttons container */
+  }
+  
+  .petit_button {
+    padding: 0;
+    border: none;
+    background: none;
+     position: relative; /* Set position to relative */
+  z-index: 1;
+    /* Add any additional styling for the petit buttons */
+  }
+  
+  .petit_button img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+ 
+  

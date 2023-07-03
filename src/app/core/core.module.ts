@@ -5,19 +5,22 @@ import { FormsModule } from '@angular/forms';
 import { WidgetComponent } from './components/widget/widget.component';
 import { HeaderNavbarComponent } from './components/header-navbar/header-navbar.component';
 import { WidgetPompeComponent } from './components/widget-pompe/widget-pompe.component';
-
+import { HistoriqueComponent } from './components/historique/historique.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
     HeaderNavbarComponent,
     WidgetComponent,
-    WidgetPompeComponent
+    WidgetPompeComponent,
+    HistoriqueComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     HeaderNavbarComponent,

@@ -24,92 +24,45 @@
       <span >Site</span>
     </button>
     <span class="example-spacer"></span>
-    <button mat-mini-fab>
-      <img src="./assets/images/icon-10.png" >
-    </button>
-  </mat-toolbar>
-      <div class="card-container">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Citerne 1</mat-card-title>
-          <span class="example-spacer"></span>
-          <p>il y a <span class="temps">3min</span></p>
-        </mat-card-header>
-        <mat-card-content>
-          <div class="citerne-content">
-            <div class="image-container">
-              <img src="./assets/images/citerne10m.png">
-            </div>
-            <div class="text-container">
-              <p>Gasoile</p>
-              <p> Dernier ravitaillement</p>
-              <p>15:55-26/06/2023</p>
-              <p>7,5m³</p>
-            </div>
-        </div>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Citerne 2</mat-card-title>
-          <span class="example-spacer"></span>
-          <p>il y a <span class="temps">3min</span></p>
-        </mat-card-header>
-        <mat-card-content>
-          <div class="citerne-content">
-            <div class="image-container">
-              <img src="./assets/images/citerne-rouge.png">
-            </div>
-            <div class="text-container">
-              <p>Gasoile</p>
-              <p> Dernier ravitaillement</p>
-              <p>15:55-26/06/2023</p>
-              <p>7,5m³</p>
-            </div>
-        </div>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Citerne 3</mat-card-title>
-          <span class="example-spacer"></span>
-          <p>il y a <span class="temps">3min</span></p>
-        </mat-card-header>
-        <mat-card-content>
-          <div class="citerne-content">
-            <div class="image-container">
-              <img src="./assets/images/citerne-orange.png">
-            </div>
-            <div class="text-container">
-              <p>Gasoile</p>
-              <p> Dernier ravitaillement</p>
-              <p>15:55-26/06/2023</p>
-              <p>7,5m³</p>
-            </div>
-        </div>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Citerne 4</mat-card-title>
-          <span class="example-spacer"></span>
-          <p>il y a <span class="temps">3min</span></p>
-        </mat-card-header>
-        <mat-card-content>
-          <div class="citerne-content">
-            <div class="image-container">
-              <img src="./assets/images/citerne10m.png">
-            </div>
-            <div class="text-container">
-              <p>Gasoile</p>
-              <p> Dernier ravitaillement</p>
-              <p>15:55-26/06/2023</p>
-              <p>7,5m³</p>
-            </div>
-        </div>
-        </mat-card-content>
-      </mat-card>
+    
+    <div class="button-container">
+      <button class="main_button" mat-mini-fab (click)="toggleExtraButtons()">
+        <img src="./assets/images/icon-10.png">
+      </button>
+      <div *ngIf="showExtraButtons" class="extra-buttons">
+        <!-- Add your additional buttons here -->
+        <button class="petit_button"><img src="./assets/images/icon-23.png"></button>
+        <button class="petit_button"><img src="./assets/images/icon-24.png"></button>
+        <button class="petit_button"><img src="./assets/images/icon-25.png"></button>
       </div>
-      
-</div>
+    </div>
+  </mat-toolbar>
 
+
+  <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4]">
+        <mat-card class="mat-elevation-z4">
+          <mat-card-header>
+            <mat-card-title>Citerne {{num}}</mat-card-title>
+            <span class="example-spacer"></span>
+            <p>il y a <span class="temps">3min</span></p>
+          </mat-card-header>
+          <div class="citerne-content">
+            <div class="image-container">
+              <img src="./assets/images/citerne10m.png">
+            </div>
+            <div class="text-container">
+              <p><img src="./assets/images/icon-11.png"> Gasoile</p>
+              <p>Dernier ravitaillement</p>
+              <p><img src="./assets/images/icon-12.png"> 15:55-26/06/2023</p>
+              <p><img src="./assets/images/icon-13.png"> 7,5m³</p>
+            </div>
+        </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
+
+<app-widget-pompe></app-widget-pompe>

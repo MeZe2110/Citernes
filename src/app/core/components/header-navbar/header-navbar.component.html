@@ -18,20 +18,20 @@
       <!-- Your sidenav content goes here -->
       <img  src="./assets/images/logoBWS.png" >
       <mat-divider></mat-divider>
-      <button mat-button class="menu-button">
+      <button mat-button class="menu-button" [routerLink]="['/dashboard']">
         <mat-icon svgIcon="tdb" ></mat-icon>
         <span>Tableau de bord</span>
       </button>
-      <button mat-button class="menu-button">
+      <button mat-button class="menu-button" [routerLink]="['/historique']">
         <mat-icon svgIcon="historique" ></mat-icon>
-        <a routerLink="/historique">Historique</a>
+        <span>Hisotrique</span>
       </button>
-      <button mat-button class="menu-button">
-        <mat-icon svgIcon="maps" ></mat-icon>
+      <button mat-button class="menu-button" [routerLink]="['/maps']" >
+        <mat-icon svgIcon="maps"></mat-icon>
         <span>Map</span>
       </button>
       <mat-divider></mat-divider>
-      <button mat-button class="menu-button">
+      <button mat-button class="menu-button" [routerLink]="['/alert']">
         <mat-icon svgIcon="alert" ></mat-icon>
         <span>Alerts</span>
       </button>
@@ -41,8 +41,7 @@
   
     <!-- Your main content goes here -->
 
-  <!---citerne-->
- <app-widget></app-widget>
- <!--pompe-->
- <app-widget-pompe></app-widget-pompe>
+    <router-outlet></router-outlet>
+
   </mat-sidenav-container>
+  

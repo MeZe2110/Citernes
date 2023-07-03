@@ -12,7 +12,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select'; 
 import { MatSidenavModule } from '@angular/material/sidenav'; 
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 @NgModule({
@@ -29,7 +29,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatProgressSpinnerModule,
     MatSelectModule,
     MatSidenavModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    FlexLayoutModule
   ]
 })
 

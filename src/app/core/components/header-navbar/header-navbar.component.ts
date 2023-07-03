@@ -14,11 +14,14 @@ export class HeaderNavbarComponent {
   selectedSortOption : string;
   showExtraButtons = false;
   showExtraButtons1 = false;
-  
+  selectedButton: string;
+  showAdditionalButtons: boolean = false;
 
   constructor(private matIconRegistry: MatIconRegistry,private domSanitizer: DomSanitizer) {
     
     this.selectedSortOption='';
+    this.selectedButton='dashboard';
+    this.showAdditionalButtons!=this.showAdditionalButtons;
     this.matIconRegistry.addSvgIcon("tdb",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/tdb.svg") );
     this.matIconRegistry.addSvgIcon("alert", this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/alerts.svg") );
     this.matIconRegistry.addSvgIcon("historique",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/history.svg"));

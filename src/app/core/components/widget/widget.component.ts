@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class WidgetComponent  {
  
   selectedSortOption : string;
-  showExtraButtons = false;
+  showExtraButtons : Boolean = false;
   constructor(){
     this.selectedSortOption='';
   }
