@@ -9,6 +9,7 @@ import { HistoriqueComponent } from './components/historique/historique.componen
 import { RouterModule } from '@angular/router';
 import { MapsComponent } from './components/maps/maps.component';
 import { AlerteComponent } from './components/alerte/alerte.component';
+import { FormComponent } from './components/form/form.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AlerteComponent } from './components/alerte/alerte.component';
     WidgetPompeComponent,
     HistoriqueComponent,
     MapsComponent,
-    AlerteComponent
+    AlerteComponent,
+    FormComponent
   ],
   imports: [
     CommonModule,

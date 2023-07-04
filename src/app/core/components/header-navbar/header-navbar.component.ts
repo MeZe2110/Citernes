@@ -4,6 +4,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 import { Component} from '@angular/core';
 
 
+
 @Component({
   selector: 'app-headerNavbar',
   templateUrl: './header-navbar.component.html',
@@ -15,7 +16,7 @@ export class HeaderNavbarComponent {
   showExtraButtons = false;
   showExtraButtons1 = false;
   selectedButton: string;
- 
+  
 
   constructor(private matIconRegistry: MatIconRegistry,private domSanitizer: DomSanitizer) {
     
@@ -33,6 +34,7 @@ export class HeaderNavbarComponent {
     this.matIconRegistry.addSvgIcon( "pmap",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-20.svg"));
     this.matIconRegistry.addSvgIcon( "fleche",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-21.svg"));
     this.matIconRegistry.addSvgIcon( "menus",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/icon-26.svg"));
+    this.matIconRegistry.addSvgIcon("tbd_clicked",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/tbd_clicked.svg"));
 
 }
 

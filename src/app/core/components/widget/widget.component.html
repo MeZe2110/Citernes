@@ -31,7 +31,7 @@
       </button>
       <div *ngIf="showExtraButtons" class="extra-buttons">
         <!-- Add your additional buttons here -->
-        <button class="petit_button"><img src="./assets/images/icon-23.png"></button>
+        <button class="petit_button" (click)="openPopupForm()"><img src="./assets/images/icon-23.png"></button>
         <button class="petit_button"><img src="./assets/images/icon-24.png"></button>
         <button class="petit_button"><img src="./assets/images/icon-25.png"></button>
       </div>
@@ -50,13 +50,13 @@
           </mat-card-header>
           <div class="citerne-content">
             <div class="image-container">
-              <img src="./assets/images/citerne10m.png">
+              <img src="./assets/images/citerne10m.png" >
             </div>
             <div class="text-container">
-              <p><img src="./assets/images/icon-11.png"> Gasoile</p>
+              <p><img src="./assets/icons/icon-11.svg" width="10%" height="10%"> Gasoile</p>
               <p>Dernier ravitaillement</p>
-              <p><img src="./assets/images/icon-12.png"> 26/06/2023 15:51</p>
-              <p><img src="./assets/images/icon-13.png"> 7,5m³</p>
+              <p><img src="./assets/icons/icon-12.svg" width="10%" height="10%"> 26/06/2023 15:51</p>
+              <p><img src="./assets/icons/icon-13.svg" width="10%" height="10%"> 7,5m³</p>
             </div>
         </div>
         </mat-card>

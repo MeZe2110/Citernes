@@ -25,6 +25,7 @@ mat-sidenav-container {
   align-items: center;
   justify-content: flex-start;
   font-size: 90%;
+  
 }
 
 mat-divider {
@@ -35,4 +36,10 @@ mat-divider {
 
 .mat-mdc-button:not(:disabled) {
   color: #b9b9b9;
+}
+
+
+
+.menu-button.active {
+  color: #22346c;
 }

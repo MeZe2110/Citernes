@@ -11,6 +11,7 @@ const routes: Routes = [
   {path : 'historique', component : HistoriqueComponent},
   {path : 'maps', component : MapsComponent},
   {path : 'alert', component : AlerteComponent},
+  {path : '**', redirectTo: 'dashboard'}
 ];
 
 @NgModule({

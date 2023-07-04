@@ -14,6 +14,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { GoogleMapsModule } from '@angular/google-maps'
+import { MatTabsModule } from '@angular/material/tabs'; 
+import { MatDialogModule } from '@angular/material/dialog'; 
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { GoogleMapsModule } from '@angular/google-maps'
     MatSidenavModule,
     MatButtonToggleModule,
     FlexLayoutModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    MatTabsModule,
+    MatDialogModule
   ]
 })
 
