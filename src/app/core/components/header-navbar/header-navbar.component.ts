@@ -13,8 +13,6 @@ import { Component} from '@angular/core';
 export class HeaderNavbarComponent {
 
   selectedSortOption : string;
-  showExtraButtons = false;
-  showExtraButtons1 = false;
   selectedButton: string;
   
 
@@ -42,11 +40,5 @@ onSortOptionChange(option: string) {
   // Handle the sort option change here
   console.log('Selected sort option:', option);
 }
-toggleExtraButtons() {
-  this.showExtraButtons = !this.showExtraButtons;
-}
 
-toggleExtraButtons1(){
-  this.showExtraButtons1 = !this.showExtraButtons1;
-}
 }

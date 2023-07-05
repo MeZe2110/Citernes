@@ -32,8 +32,8 @@
       <div *ngIf="showExtraButtons" class="extra-buttons">
         <!-- Add your additional buttons here -->
         <button class="petit_button" (click)="openPopupForm()"><img src="./assets/images/icon-23.png"></button>
-        <button class="petit_button"><img src="./assets/images/icon-24.png"></button>
-        <button class="petit_button"><img src="./assets/images/icon-25.png"></button>
+        <button class="petit_button" (click)="toggleModify()"><img src="./assets/images/icon-24.png"></button>
+        <button class="petit_button" (click)="toggleDelete()"><img src="./assets/images/icon-25.png"></button>
       </div>
     </div>
   </mat-toolbar>
@@ -46,7 +46,9 @@
           <mat-card-header>
             <mat-card-title>Citerne {{num}}</mat-card-title>
             <span class="example-spacer"></span>
-            <p>il y a <span class="temps">3min</span></p>
+            <p *ngIf="!Istoggeled && !IsDelete">il y a <span class="temps">3min</span></p>
+            <img src="./assets/icons/icon-24.svg" width="15%" height="15%" *ngIf="Istoggeled" (click)="openPopupForm()">
+            <img src="./assets/icons/icon-25.svg" width="15%" height="15%" *ngIf="IsDelete" >
           </mat-card-header>
           <div class="citerne-content">
             <div class="image-container">
