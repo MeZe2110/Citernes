@@ -35,9 +35,11 @@ export class WidgetComponent  {
 
 toggleModify(){
   this.Istoggeled=!this.Istoggeled;
+  this.IsDelete=false;
 }
 toggleDelete(){
   this.IsDelete=!this.IsDelete;
+  this.Istoggeled=false;
 }
   
 }
