@@ -3,10 +3,13 @@
   <mat-toolbar class="barre">
     <span>États des citernes</span>
     <span class="spacer"></span>
-    <button class="custom-button">
+    
       <mat-icon class="custom-icon" svgIcon="tc"></mat-icon>
-      <span >Toutes les citernes</span>
-    </button>
+      <select class="custom-button" [(ngModel)]="selectedCiterneId" (change)="onSelectCiterne()">
+        <option value="0" >Toutes les citernes</option>
+        <option *ngFor="let num of citernes" [value]="num.id">Citerne {{num.id}}</option>
+      </select>
+
     <button class="custom-button">
       <mat-icon class="custom-icon" svgIcon="capacite"></mat-icon>
       <span >Capactité</span>
@@ -38,27 +41,27 @@
     </div>
   </mat-toolbar>
 
-
+  
   <div class="content">
     <div fxLayout="row wrap" fxLayoutGap="16px grid">
-      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4]">
-        <mat-card class="mat-elevation-z4">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of filteredCiternes" >
+        <mat-card class="mat-elevation-z4" >
           <mat-card-header>
-            <mat-card-title>Citerne {{num}}</mat-card-title>
+            <mat-card-title>Citerne {{num.id}}</mat-card-title>
             <span class="example-spacer"></span>
             <p *ngIf="!Istoggeled && !IsDelete">il y a <span class="temps">3min</span></p>
-            <img src="./assets/icons/icon-24.svg" width="15%" height="15%" *ngIf="Istoggeled" (click)="openPopupForm()">
-            <img src="./assets/icons/icon-25.svg" width="15%" height="15%" *ngIf="IsDelete" >
+            <img src="./assets/icons/icon-24.svg" width="12%" height="12%" *ngIf="Istoggeled" (click)="openPopupForm()">
+            <img src="./assets/icons/icon-25.svg" width="12%" height="12%" *ngIf="IsDelete" (click)="deleteCiterne(num)" >
           </mat-card-header>
           <div class="citerne-content">
             <div class="image-container">
               <img src="./assets/images/citerne10m.png" >
             </div>
             <div class="text-container">
-              <p><img src="./assets/icons/icon-11.svg" width="10%" height="10%"> Gasoile</p>
+              <p><img src="./assets/icons/icon-11.svg" width="10%" height="10%">{{num.nature}} </p>
               <p>Dernier ravitaillement</p>
-              <p><img src="./assets/icons/icon-12.svg" width="10%" height="10%"> 26/06/2023 15:51</p>
-              <p><img src="./assets/icons/icon-13.svg" width="10%" height="10%"> 7,5m³</p>
+              <p><img src="./assets/icons/icon-12.svg" width="10%" height="10%"> {{num.date | date:'dd/MM/yy HH:mm'}}</p>
+              <p><img src="./assets/icons/icon-13.svg" width="10%" height="10%"> {{num.capacite}}m³</p>
             </div>
         </div>
         </mat-card>

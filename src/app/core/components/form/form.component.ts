@@ -8,8 +8,14 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class FormComponent {
 
+
+
+
   constructor(public dialogRef: MatDialogRef<FormComponent>){}
+
   closeForm():void{
     this.dialogRef.close();
   }
+
+  
 }
