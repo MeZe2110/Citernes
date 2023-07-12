@@ -1,6 +1,10 @@
 <mat-tab-group>
-      <mat-tab label="Hitorique Citernes">Content 1</mat-tab>
-      <mat-tab label="Historique Pommpes">Content 2</mat-tab>
+      <mat-tab label="Hitorique Citernes">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions" style="width: 100%; height: 400px; display: block;"></highcharts-chart>
+      </mat-tab>
+      <mat-tab label="Historique Pommpes">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions" style="width: 100%; height: 400px; display: block;"></highcharts-chart>
+      </mat-tab>
 </mat-tab-group>
 
   

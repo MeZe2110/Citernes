@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { HighchartsChartModule } from 'highcharts-angular';
 
 
 @NgModule({
@@ -12,10 +12,12 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    HighchartsChartModule
   ],
   exports: [
-    MaterialModule
+    MaterialModule,
+    HighchartsChartModule
   ]
 })
 export class SharedModule { }
