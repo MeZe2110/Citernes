@@ -15,20 +15,6 @@ export class HistoriqueComponent {
      title: {
         text: 'Suivi de la distribution de toutes les pompes'
      },
-     
-     legend : {
-        layout: 'vertical',
-        align: 'left',
-        verticalAlign: 'top',
-        x: 250,
-        y: 100,
-        floating: true,
-        borderWidth: 1,
-       
-        backgroundColor: (
-           (Highcharts.theme && Highcharts.theme) || 
-              '#FFFFFF'), shadow: true
-     },
      xAxis:{
         categories: ['Date 1', 'Date 2', 'Date 3', 'Date 3', 'Date 4'], title: {
            text: null
@@ -50,7 +36,7 @@ export class HistoriqueComponent {
      plotOptions : {
         column: {
            dataLabels: {
-              enabled: true
+              enabled: false
            }
         },
         series: {
@@ -104,7 +90,7 @@ export class HistoriqueComponent {
      plotOptions: {
         series: {
            dataLabels: {
-              enabled: true
+              enabled: false
            }
         }
      },
