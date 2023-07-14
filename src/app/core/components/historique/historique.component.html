@@ -1,9 +1,38 @@
 <mat-tab-group>
       <mat-tab label="Hitorique Citernes">
             <highcharts-chart [Highcharts]="highchart" [options]="chartOption" style="width: 100%; height: 400px; display: block;"></highcharts-chart>
+                  <dx-data-grid id="gridContainer" [dataSource]="staticDataSource" [remoteOperations]="false" [allowColumnReordering]="true" [rowAlternationEnabled]="true" [showBorders]="false" (onExporting)="onExporting($event)">
+
+                        <dxo-paging [pageSize]="10"></dxo-paging>
+
+                        <dxo-pager [showPageSizeSelector]="true"[allowedPageSizes]="[10, 25, 50, 100]"></dxo-pager>
+                        <dxo-search-panel [visible]="true"[highlightCaseSensitive]="true"></dxo-search-panel>
+                        <dxo-group-panel [visible]="true"></dxo-group-panel>
+                        <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+                        <dxi-column dataField="Citerne" [groupIndex]="0"></dxi-column>
+                        <dxi-column dataField="Date" dataType="date" ></dxi-column>
+                        <dxi-column dataField="VolumeI" dataType="number" caption="Volume inital (m³)"></dxi-column>
+                        <dxi-column dataField="Quantite" dataType="number" caption="Quantité ajoutée (m³)"></dxi-column>
+                        <dxi-column dataField="Siphonage" dataType="number" caption="Siphonage (m³)"></dxi-column>
+                        <dxi-column dataField="VolumeF" dataType="number"caption="Volume final (m³)"></dxi-column>
+                        <dxi-column dataField="Vehicule" dataType="number" caption="Véhicule"></dxi-column>
+
+                        <dxo-export [enabled]="true"[formats]="['pdf']"></dxo-export>
+                  </dx-data-grid>
       </mat-tab>
       <mat-tab label="Historique Pommpes">
             <highcharts-chart [Highcharts]="highcharts" [options]="chartOptions" style="width: 100%; height: 400px; display: block;"></highcharts-chart>
+            <dx-data-grid id="gridContainer" [dataSource]="staticDataPompe" [remoteOperations]="false" [allowColumnReordering]="true" [rowAlternationEnabled]="true" [showBorders]="true">
+                  <dxo-paging [pageSize]="10"></dxo-paging>
+                  <dxo-pager [showPageSizeSelector]="true"[allowedPageSizes]="[10, 25, 50, 100]"></dxo-pager>
+                  <dxo-search-panel [visible]="true"[highlightCaseSensitive]="true"></dxo-search-panel>
+                  <dxo-group-panel [visible]="true"></dxo-group-panel>
+                  <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+                  <dxi-column dataField="Pompe" [groupIndex]="0"></dxi-column>
+                  <dxi-column dataField="Date" dataType="date" ></dxi-column>
+                  <dxi-column dataField="Quantite" dataType="number" caption="Quantité (L)"></dxi-column>
+                  <dxi-column dataField="Véhicule" dataType="number" caption="Véhicule"></dxi-column>
+            </dx-data-grid>
       </mat-tab>
 </mat-tab-group>
 

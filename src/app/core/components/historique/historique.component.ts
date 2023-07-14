@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import { exportDataGrid } from 'devextreme/pdf_exporter';
+import { jsPDF } from 'jspdf';
 
 
 @Component({
@@ -8,6 +10,28 @@ import * as Highcharts from 'highcharts';
   styleUrls: ['./historique.component.scss']
 })
 export class HistoriqueComponent {
+
+
+
+
+  staticDataSource = [
+    { Citerne: '1', Date: '2023-07-14', VolumeI: 10, Quantite: 30, Siphonage: 20, VolumeF: 20, Vehicule: 55555 },
+    { Citerne: '2', Date: '2023-07-14', VolumeI: 10, Quantite: 30, Siphonage: 10, VolumeF: 30, Vehicule: 55555 }
+    // Add more static data objects as needed
+  ];
+
+  
+
+
+  staticDataPompe = [
+   { Pompe: '1', Date: '2023-07-14',  Quantite: 30,  Vehicule: 55555 },
+   { Pompe: '1', Date: '2023-07-14',  Quantite: 20,  Vehicule: 55555 },
+   { Pompe: '2', Date: '2023-07-14',  Quantite: 30,  Vehicule: 55555 }
+   // Add more static data objects as needed
+ ];
+
+
+
   highcharts = Highcharts;
   chartOptions:any = {   
      chart: {
@@ -115,4 +139,16 @@ export class HistoriqueComponent {
         data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
      }]
   };
+
+  onExporting(e:any) {
+   const doc = new jsPDF();
+   exportDataGrid({
+     jsPDFDocument: doc,
+     component: e.component,
+     indent: 5,
+   }).then(() => {
+     doc.save('Companies.pdf');
+   });
+ }
+
 }

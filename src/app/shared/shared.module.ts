@@ -4,6 +4,8 @@ import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { DxDataGridModule,DxBulletModule,DxTemplateModule} from 'devextreme-angular';
+
 
 
 @NgModule({
@@ -17,7 +19,11 @@ import { HighchartsChartModule } from 'highcharts-angular';
   ],
   exports: [
     MaterialModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    DxDataGridModule,
+    DxBulletModule,
+    DxTemplateModule,
+    
   ]
 })
 export class SharedModule { }
