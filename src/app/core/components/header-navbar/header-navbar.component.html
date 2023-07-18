@@ -7,7 +7,7 @@
     (click)="sidenav.toggle()" >
     <mat-icon svgIcon="menus"></mat-icon>
     </button>
-    <span class="text">My App</span>
+    <span class="text">{{myApp}}</span>
     <span class="example-spacer"></span>
   </mat-toolbar>
 
@@ -18,20 +18,20 @@
       <!-- Your sidenav content goes here -->
       <img  src="./assets/icons/logoBWS.svg" >
       <mat-divider></mat-divider>
-      <button mat-button class="menu-button" [routerLink]="['/dashboard']" routerLinkActive="active">
+      <button mat-button class="menu-button" (click)="updateMyAppText('Tableau de Bord')" [routerLink]="['/dashboard']" routerLinkActive="active">
         <mat-icon svgIcon="tdb" ></mat-icon>
         <span>Tableau de bord</span>
       </button>
-      <button mat-button class="menu-button" [routerLink]="['/historique']" routerLinkActive="active">
+      <button mat-button class="menu-button" (click)="updateMyAppText('Historique')" [routerLink]="['/historique']" routerLinkActive="active">
         <mat-icon svgIcon="historique" ></mat-icon>
         <span>Hisotrique</span>
       </button>
-      <button mat-button class="menu-button" [routerLink]="['/maps']" routerLinkActive="active">
+      <button mat-button class="menu-button" (click)="updateMyAppText('Map')" [routerLink]="['/maps']" routerLinkActive="active">
         <mat-icon svgIcon="maps"></mat-icon>
         <span>Map</span>
       </button>
       <mat-divider></mat-divider>
-      <button mat-button class="menu-button" [routerLink]="['/alert']">
+      <button mat-button class="menu-button" (click)="updateMyAppText('Alerte')" [routerLink]="['/alert']">
         <mat-icon svgIcon="alert" ></mat-icon>
         <span>Alerts</span>
       </button>

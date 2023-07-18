@@ -14,7 +14,7 @@ export class HeaderNavbarComponent {
 
   selectedSortOption : string;
   selectedButton: string;
-  
+  myApp :string ='My App';
 
   constructor(private matIconRegistry: MatIconRegistry,private domSanitizer: DomSanitizer) {
     
@@ -39,6 +39,9 @@ export class HeaderNavbarComponent {
 onSortOptionChange(option: string) {
   // Handle the sort option change here
   console.log('Selected sort option:', option);
+}
+updateMyAppText(text: string) {
+  this.myApp = text;
 }
 
 }

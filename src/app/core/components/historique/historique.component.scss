@@ -1,0 +1,117 @@
+/* CSS to style the dxDataGrid */
+.dx-datagrid {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header style */
+  .dx-datagrid-header {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+  }
+  
+  /* Header cell style */
+  .dx-datagrid-header-panel .dx-datagrid-header-panel-cell {
+    padding: 8px 10px;
+  }
+  
+  /* Alternating row background color */
+  .dx-datagrid-rowsview .dx-row-alt {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect on rows */
+  .dx-datagrid-rowsview .dx-row:hover {
+    background-color: #eaf4ff;
+    cursor: pointer;
+  }
+  
+  /* Border around the cells */
+  .dx-datagrid-rowsview .dx-cell {
+    border-right: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+  
+  /* Border around the rows */
+  .dx-datagrid-rowsview .dx-row {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Odd and even rows text color */
+  .dx-datagrid-rowsview .dx-row-alt .dx-cell,
+  .dx-datagrid-rowsview .dx-row .dx-cell {
+    color: #333;
+  }
+  
+  /* Pagination styles */
+  .dx-datagrid-pager .dx-pages {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dx-datagrid-pager .dx-pages .dx-page {
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dx-datagrid-pager .dx-pages .dx-page.dx-page-active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Search panel styles */
+  .dx-datagrid-search-panel {
+    margin-bottom: 10px;
+  }
+  
+  .dx-datagrid-search-panel input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Group panel styles */
+  .dx-datagrid-group-panel {
+    margin-bottom: 10px;
+  }
+  
+  .dx-datagrid-group-panel .dx-selectbox-container {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Export button style */
+  .dx-datagrid-export-button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .dx-datagrid-export-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Customize the dxDataGrid scrollbar */
+  .dx-datagrid-content-nowrap.dx-scrollable-customizable-scrollbars .dx-scrollable-scrollbar {
+    width: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  
+  .dx-datagrid-content-nowrap.dx-scrollable-customizable-scrollbars .dx-scrollable-scrollbar .dx-scrollable-scroll {
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  

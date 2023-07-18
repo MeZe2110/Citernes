@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import { exportDataGrid } from 'devextreme/pdf_exporter';
 import { jsPDF } from 'jspdf';
+import HighchartsExporting from 'highcharts/modules/exporting';
+HighchartsExporting(Highcharts);
 
 
 @Component({
@@ -11,6 +13,7 @@ import { jsPDF } from 'jspdf';
 })
 export class HistoriqueComponent {
 
+   @ViewChild('chartContainer') chartContainer!: ElementRef;
 
 
 
@@ -151,4 +154,18 @@ export class HistoriqueComponent {
    });
  }
 
+ exportChartToPDF() {
+   if (this.chartContainer && this.chartContainer.nativeElement) {
+      const chart = this.chartContainer.nativeElement;
+
+      if (chart.exportChart) {
+        chart.exportChart({ type: 'application/pdf' });
+      } else {
+        console.error('Exporting functionality not available.');
+      }
+    } else {
+      console.error('Chart container not found.');
+    }
+  }
 }
+
